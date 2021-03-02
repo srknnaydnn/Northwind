@@ -1,0 +1,14 @@
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\SERKAN\source\repos\Nortwind\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
