@@ -2,6 +2,7 @@
 using Business.BusinessAspect.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspect.Autofac.Caching;
 using Core.Aspect.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
@@ -28,8 +29,9 @@ namespace Business.Concrete
             _categoryServices = categoryServices;
 
         }
-        [SecuredOperation("product.add,admin")]
-        [ValidationAspect(typeof(ValidationTool))]
+        [SecuredOperation("admin")]
+        [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductServices.Get")]
         public IResult Add(Product product)
         {
             IResult result = BusinessRules.Run(CheckIfProductCountOfCategoryCorrect(product.CategoryId),
@@ -42,9 +44,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.Added);
 
         }
-
-
-
+        [CacheAspect]
         public IDataResult<List<Product>> GetAll()
         {
             if (DateTime.Now.Hour == 12)
@@ -58,7 +58,7 @@ namespace Business.Concrete
         {
             return new DataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id), true);
         }
-
+        [CacheAspect]
         public IDataResult<List<Product>> GetById(int id)
         {
             return new DataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id), true);
@@ -103,9 +103,14 @@ namespace Business.Concrete
 
             if (result.Data.Count>=8)
             {
-                return new ErrorResults("Category SAyısı 15'i geçemez");
+                return new ErrorResults("Category Sayısı 15'i geçemez");
             }
             return new SuccessResult();
+        }
+
+        public IResult AddTransactionalTest(Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }
