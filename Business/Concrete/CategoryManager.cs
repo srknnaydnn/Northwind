@@ -19,7 +19,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Category>> GetAll()
         {
-           return  new SuccessDataResult<List<Category>>( _category.GetAll(),true,"hello"); 
+           return  new SuccessDataResult<List<Category>>( _category.GetAll(),true,"Categoriler Listelendi"); 
         }
 
         public IDataResult<Category> GetElementByID(int categoryId)

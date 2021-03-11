@@ -9,6 +9,5 @@ namespace DataAccess.Abstract
 {
     public interface IProductDal :IEntitiyRepository<Product>
     {
-
     }
 }

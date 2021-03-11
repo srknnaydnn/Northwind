@@ -5,6 +5,7 @@ using Core.Utilities.IOC;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Core.Aspect.Autofac.Caching
